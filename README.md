@@ -1,13 +1,12 @@
 
 
 FSL中的数据加载与标准分类略有不同，因为我们以少量分类任务的形式采样批量实例。
-- [TaskSampler](easyfsl/samplers/task_sampler.py): an extension of the standard PyTorch Sampler object, to sample batches in the shape of few-shot classification tasks
-- [FewShotDataset](easyfsl/datasets/few_shot_dataset.py): an abstract class to standardize the interface of any dataset you'd like to use
-- [EasySet](easyfsl/datasets/easy_set.py): a ready-to-use FewShotDataset object to handle datasets of images with a class-wise directory split
-- [WrapFewShotDataset](easyfsl/datasets/wrap_few_shot_dataset.py): a wrapper to transform any dataset into a FewShotDataset object
-- [FeaturesDataset](easyfsl/datasets/features_dataset.py): a dataset to handle pre-extracted features
-- [SupportSetFolder](easyfsl/datasets/support_set_folder.py): a dataset to handle support sets stored in a directory
-
+- [TaskSampler](easyfsl/samplers/task_sampler.py): 标准PyTorch Sampler对象的扩展，以少量分类任务的形式对批次进行采样
+- [FewShotDataset](easyfsl/datasets/few_shot_dataset.py): 一个抽象类，用于标准化您想要使用的任何数据集的接口
+- [EasySet](easyfsl/datasets/easy_set.py): 一个随时可用的FewShotDataset对象，用于处理具有类分类的目录分割的图像数据集
+- [WrapFewShotDataset](easyfsl/datasets/wrap_few_shot_dataset.py): 将任何数据集转换为一个FewShotDataset对象的包装器
+- [FeaturesDataset](easyfsl/datasets/features_dataset.py): 处理预提取特征的数据集
+- [SupportSetFolder](easyfsl/datasets/support_set_folder.py): 用于处理存储在目录中的支持集的数据集
 ### Datasets to test your model
 
 **[CU-Birds](http://www.vision.caltech.edu/visipedia/CUB-200.html)**
