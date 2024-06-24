@@ -1,5 +1,5 @@
 
-
+## File Descriptor
 FSL中的数据加载与标准分类略有不同，因为我们以少量分类任务的形式采样批量实例。
 - [TaskSampler](easyfsl/samplers/task_sampler.py): 标准PyTorch Sampler对象的扩展，以少量分类任务的形式对批次进行采样
 - [FewShotDataset](easyfsl/datasets/few_shot_dataset.py): 一个抽象类，用于标准化您想要使用的任何数据集的接口
@@ -54,4 +54,8 @@ dataset = DanishFungi(root="where/fungi/is")
 3. Design your training and evaluation scripts. You can use our example notebooks for 
 [episodic training](notebook/05episodic_training.ipynb) 
 or [classical training](notebook/02classical_training_with_PrototypicalNetworks.ipynb).
-
+## 学习课程推荐
+· 待补充
+## Acknowledgement
+[easyfsl](https://github.com/sicara/easy-few-shot-learning)
+[FSL-Mate](https://github.com/tata1661/FSL-Mate)
